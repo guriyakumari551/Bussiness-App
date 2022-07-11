@@ -9,7 +9,9 @@ const app_id=process.env.STREAM_APP_ID
 
 
 const signup=async (req,res)=>{
-
+//They are fetching all the information from the body
+//and after that conncect the data from frontend to backend and connect to the stream.io api by provideing the 
+//api key and password
 try{
  const {fullName,username,password,phonenumber}=req.body;
  const userId=crypto.randomBytes(16).toString('hex')
