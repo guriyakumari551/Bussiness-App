@@ -9,7 +9,7 @@ const cookies=new Cookies()
 const apiKey='jreyrvaaapf4'
 const authToken=cookies.get("token")
 
-
+//it means that if the authtoken is successfully created than connect the user with the application
 const client=StreamChat.getInstance(apiKey);
 if(authToken){
   client.connectUser({
